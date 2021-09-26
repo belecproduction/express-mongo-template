@@ -5,7 +5,7 @@
   "scripts": {
     "watch": "tsc -w",
     "start": "ts-node src/app",
-    "start:js": "ts-node dist/app.js",
+    "start:js": "node dist/app.js",
     "dev": "nodemon --watch src -e ts,tsx --exec ts-node src/app",
     "dev:js": "nodemon dist/app.js",
     "lint": "tslint -c tslint.json -p tsconfig.json"
