@@ -8,6 +8,6 @@
 
 **_4. change value of `name` field on `package.json` file to your app name_**
 
-**_4 1/2. if ts-node cannot run on your machine, do this: `yarn watch`, wait until `dist` directory automatically generated, force-end with `ctrl + c`, then `yarn dev:js`_**
+**_4 1/2. if ts-node cannot run on your machine, do this: `yarn watch`, wait until `dist` directory automatically generated, force-end with `ctrl + c`, then `yarn dev:js` or `npm run dev:js`_**
 
 **_5. start development! and, dont be lazy as fuck!_**
