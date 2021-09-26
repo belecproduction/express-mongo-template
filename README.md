@@ -6,6 +6,6 @@
 
 **_3. `yarn install` or `npm install`_**
 
-**_4. change `name` field on `package.json` file to your app name_**
+**_4. change value of `name` field on `package.json` file to your app name_**
 
 **_5. start development! and, dont be lazy as fuck!_**
