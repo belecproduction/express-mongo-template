@@ -20,12 +20,15 @@ import morgan from 'morgan';
 import cors from 'cors';
 import { generalConfig, dbConfig } from 'Config';
 (async () => {
-  await mongoose.connect(dbConfig.mongoURI, () => console.log('db successfully connected!'));
+  await mongoose.connect(dbConfig.mongoURI);
+  console.log('db successfully connected!!');
   const app = express();
   const port = generalConfig.general.appPort;
   app.use(morgan('dev'));
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(bodyParser.json());
   app.use(cors());
+  const router = Router();
+  app.use(router.get('/', () => console.log('abc')));
   app.listen(port, () => console.log(`app run on port ${port}`));
 })();
